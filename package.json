@@ -1,0 +1,25 @@
+{
+  "name": "opencvnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron-rebuild": "electron-rebuild -w opencv4nodejs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "win32": "electron-packager . myAppWindows --platform=win32 --arch=ia32",
+    "linux32": "electron-packager . myAppLinux --platform=linux --arch=ia32"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "opencv4nodejs": "^4.5.1"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0",
+    "electron-rebuild": "^1.7.3",
+    "opencv4nodejs": "^4.5.1"
+  }
+}
