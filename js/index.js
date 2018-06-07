@@ -31,18 +31,18 @@ function atualizaFiltro(){
       break
     case '4':
       defineImagemDestino(fSobel(mat))
-      break
+      break    
     case '5':
-      defineImagemDestino(histograma(mat))
-      break
-    case '6':
       defineImagemDestino(fContrateNoroeste(mat))
       break
-    case '7':
+    case '6':
       defineImagemDestino(fContrateSudoeste(mat))
       break
+    case '7':
+      defineImagemDestino(histograma(mat))
+      break
     default:
-      defineImagemDestino('./nenhuma-imagem.png')  
+      defineImagemDestino(origem)  
   }
 }
 

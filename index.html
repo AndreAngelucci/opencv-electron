@@ -8,47 +8,48 @@
     </head>
     <body>
       <div class="container">
-        <h1>Processamento de imagens</h1>
-        <div>
-          <p>
-            Selecione a imagem que será processada:
+        <h1>Processamento de Imagens</h1>
+        Selecione uma imagem e escolha um filtro para processá-la.
+        <hr>
+        <div class="row row-nav">
+          <div class="col-sm centralizado">            
             <label class="btn btn-info">
-                Carregar<input type="file" id="inputSelecionar" name="inputSelecionar" hidden>
+                Carregar imagem<input type="file" id="inputSelecionar" name="inputSelecionar" hidden>
             </label>
-          </p>
-        </div>                    
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">Filtro:</label>
           </div>
-          <select class="custom-select" id="selecaoFiltro">
-            <option selected>Nenhum</option>
-            <option value="1">Passa-baixas linear</option>
-            <option value="2">Passa-baixas Gauss</option>
-            <option value="3">Realce: Passa-altas</option>
-            <option value="4">Passa-altas Sobel</option>
-            <option value="5">Histograma</option>
-            <option value="6">Contrate noroeste</option>
-            <option value="7">Contrate sudoeste</option>
-          </select>
-        </div>        
 
-        <div class="row">
           <div class="col-sm">
+            <div class="input-group mb-3 centralizado">          
+              <select class="custom-select" id="selecaoFiltro">
+                <option selected>Escolha o filtro</option>
+                <option value="1">Passa-baixas linear</option>
+                <option value="2">Passa-baixas Gauss</option>
+                <option value="3">Passa-altas Realce</option>
+                <option value="4">Passa-altas Sobel</option>                
+                <option value="5">Contrate noroeste</option>
+                <option value="6">Contrate sudoeste</option>
+                <option value="7">Histograma</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-img">
+          <div class="col-sm col-img">
             <figure class="figure">
               <img id="imOriginal" src="nenhuma-imagem.png" class="figure-img img-fluid rounded" alt="Nenhuma imagem">
               <figcaption class="figure-caption">Imagem original.</figcaption>
             </figure>
           </div>
-          <div class="col-sm">
+          <div class="col-sm col-img">
             <figure class="figure">
               <img id="imDestino" src="nenhuma-imagem.png" class="figure-img img-fluid rounded" alt="Nenhuma imagem">
               <figcaption class="figure-caption">Imagem processada.</figcaption>
             </figure>
           </div>
         </div>        
-        <div class="fixed-bottom">
-          Unifev
+        <div class="fixed-bottom footer">
+          Unifev - 2018 [André e Natiele]
         </div>
       </div>
     </body>
